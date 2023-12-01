@@ -1,0 +1,167 @@
+body {
+    background: linear-gradient(to right, #1B0C23, #0C164B);
+}
+
+.header-container {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 2rem;
+}
+
+.header-container h2 {
+    color: #FFD029;
+    font-size: 1rem;
+}
+
+#planet-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.star {
+    background-color: #FFD029;
+    cursor: pointer; 
+    margin-right: -35rem; 
+    box-shadow: none;
+}
+
+.celestial-body {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.body-merkurius {
+    background-color: #8B8A85;
+    width: 14px;
+    height: 14px; 
+}
+
+.body-venus {
+    background-color: #E7CDCC;
+    width: 26px;
+    height: 26px;
+}
+
+.body-jorden {
+    background-color: #428ED4;
+    width: 28px;
+    height: 28px;
+}
+
+.body-mars {
+    background-color: #EF5F5F;
+    width: 14px;
+    height: 14px;
+}
+
+.body-jupiter {
+    background-color: #E29468;
+    width: 188px;
+    height: 188px;
+}
+
+.body-saturnus {
+    background-color: #C7AA72;
+    width: 144px;
+    height: 144px;
+    position: relative;
+}
+
+.body-uranus {
+    background-color:#C9D4F1;
+    width: 66px;
+    height: 66px;
+}
+
+.body-neptunus {
+    background-color: #7A91A7;
+    width: 66px;
+    height: 66px;
+}
+
+/**************Overlay*******************/
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1B0C23, #0C164B);
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    max-width: 60%;
+    word-wrap: break-word;    
+}
+
+.overlay-content-sat-net {
+    margin-left: 5rem;
+}
+
+.body-saturnus::before {
+    content: '';
+    position: absolute;
+    width: 140%;
+    height: 7px;
+    background-color: rgba(255, 255, 255, 0.377);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    clip-path: polygon(50% 7%, 56% 12%, 100% 50%, 56% 88%, 50% 93%, 44% 88%, 0 50%, 44% 12%);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.overlay-content h2 {
+    font-size: 3rem;
+}
+
+.overlay-content h3 {
+    color: #FFD029;
+    font-size: 2rem;
+}
+
+span {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.overlay-border {
+    display: flex;
+    gap: 5rem;
+    border-top: 0.1px solid #FFFFFF;
+    border-bottom: 0.1px solid #FFFFFF;   
+}
+
+.planet-icon {
+    width: 46rem;
+    height: 46rem;
+    border-radius: 50%;
+    transform: translateX(-80%);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 20px gray, 0 0 40px rgba(128, 128, 128, 0.76);  
+}
+
+
+
+
+
+
+

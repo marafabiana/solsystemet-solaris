@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1>SOLSYSTEMET</h1>
+        <h2>SOLARIS</h2>
+    </div>
+
+    <div id="planet-container">
+        <div id="sun" class="star planet-icon"></div>
+    </div>
+
+    <div id="overlay" class="overlay">
+
+        <div class="planet-icon" id="planet-icon"></div> <!-- New element for planet icon -->
+
+        <div id="overlay-content" class="overlay-content">
+            <h2 id="planet-name"></h2>
+            <h3 id="planet-latinName"></h3>
+            <p id="planet-desc"></p>
+            <div class="overlay-border">
+                <div>
+                    <p id="planet-circumference"></p>
+                    <p id="planet-max-temp"></p>
+                </div>
+                <div>
+                    <p id="planet-distance"></p>
+                    <p id="planet-min-temp"></p>
+                </div>
+            </div>
+            <p id="planet-moons"></p>
+        </div>
+        <span class="close" onclick="closeOverlay()">&times;</span> <!-- &times -> create a close button in user interfaces -->
+    </div>
+
+</body>
+
+</html>
